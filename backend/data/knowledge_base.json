@@ -1,0 +1,287 @@
+[
+  {
+    "answer": "Halo, Sobat Musik! 🎶 Selamat datang di YM Music Store. Aku Asisten YM yang siap membantu mencari alat musik, mengecek informasi produk, atau memberi rekomendasi. Sedang mencari instrumen apa?",
+    "intent": "greeting",
+    "patterns": [
+      "halo",
+      "hai",
+      "hello",
+      "selamat pagi",
+      "selamat siang",
+      "selamat malam",
+      "apa kabar",
+      "permisi",
+      "hei"
+    ]
+  },
+  {
+    "answer": "Tentu! Untuk pemula, sebaiknya pilih instrumen yang nyaman dimainkan, sesuai kebutuhan, dan cocok dengan anggaran. Kamu tertarik belajar gitar, bass, drum, atau keyboard? Aku bisa bantu mencarikan beberapa pilihan.",
+    "intent": "recommend_beginner",
+    "patterns": [
+      "saya pemula ingin belajar musik",
+      "alat musik apa untuk pemula",
+      "rekomendasi alat musik pertama",
+      "saya baru belajar gitar",
+      "instrumen untuk pemula",
+      "baru mulai belajar musik",
+      "alat musik yang cocok untuk pemula"
+    ]
+  },
+  {
+    "answer": "Kami punya pilihan gitar akustik dan elektrik untuk berbagai tingkat kemampuan. Jika kamu mencari gitar elektrik serbaguna, Yamaha Pacifica 112J bisa menjadi salah satu pilihan untuk dipertimbangkan.",
+    "intent": "guitar",
+    "patterns": [
+      "gitar elektrik",
+      "gitar akustik",
+      "rekomendasi gitar",
+      "berapa harga gitar",
+      "saya mencari gitar",
+      "gitar untuk pemula",
+      "gitar listrik"
+    ]
+  },
+  {
+    "answer": "Untuk latihan di rumah, drum elektrik bisa menjadi pilihan praktis karena umumnya mendukung penggunaan headphone. Kami menyediakan beberapa pilihan drum elektronik. Kamu mencari drum elektrik atau akustik?",
+    "intent": "drums",
+    "patterns": [
+      "drum elektrik",
+      "drum akustik",
+      "rekomendasi drum",
+      "harga drum",
+      "alat drum untuk latihan",
+      "set drum",
+      "drum untuk pemula"
+    ]
+  },
+  {
+    "answer": "Keyboard portabel cocok untuk mulai belajar karena fleksibel dan mudah dipindahkan. Saat memilih, perhatikan jumlah tuts, respons sentuhan, kualitas suara, dan fitur latihan.",
+    "intent": "keyboard",
+    "patterns": [
+      "keyboard",
+      "piano digital",
+      "piano untuk pemula",
+      "rekomendasi keyboard",
+      "harga keyboard",
+      "alat musik tuts",
+      "piano elektrik"
+    ]
+  },
+  {
+    "answer": "Untuk mulai belajar bass, bass elektrik 4 senar biasanya menjadi pilihan yang umum. Perhatikan kenyamanan leher gitar, bobot instrumen, dan pengaturan senarnya.",
+    "intent": "bass",
+    "patterns": [
+      "gitar bass",
+      "bass elektrik",
+      "rekomendasi bass",
+      "harga bass",
+      "belajar bass",
+      "bass untuk pemula"
+    ]
+  },
+  {
+    "answer": "Harga produk berbeda-beda sesuai jenis dan spesifikasinya. Kamu bisa melihat harga pada katalog produk. Jika punya batas anggaran, sebutkan nominalnya agar aku bisa membantu menyaring pilihan.",
+    "intent": "price",
+    "patterns": [
+      "berapa harga produk",
+      "minta daftar harga",
+      "harga alat musik",
+      "berapa anggaran yang dibutuhkan",
+      "produk paling murah",
+      "harga gitar berapa",
+      "berapa harganya"
+    ]
+  },
+  {
+    "answer": "Informasi stok yang tampil di katalog merupakan data produk toko. Sebutkan nama produk yang ingin kamu periksa, ya.",
+    "intent": "stock",
+    "patterns": [
+      "apakah barang tersedia",
+      "cek stok produk",
+      "stok gitar",
+      "barang siap",
+      "produk masih ada",
+      "apakah masih tersedia",
+      "stok barang"
+    ]
+  },
+  {
+    "answer": "Untuk simulasi toko ini, pengiriman tersedia ke berbagai wilayah Indonesia. Biaya dan perkiraan waktu pengiriman bergantung pada alamat tujuan serta ukuran instrumen. Silakan hubungi admin untuk konfirmasi sebelum melakukan pemesanan.",
+    "intent": "shipping",
+    "patterns": [
+      "berapa ongkos kirim",
+      "pengiriman ke depok",
+      "bisa kirim ke luar kota",
+      "berapa lama pengiriman",
+      "jasa ekspedisi",
+      "apakah melayani pengiriman",
+      "ongkir"
+    ]
+  },
+  {
+    "answer": "Metode pembayaran pada YM Music Store meliputi transfer bank dan QRIS. Untuk transaksi sebenarnya, detail pembayaran perlu dikonfirmasi oleh admin toko.",
+    "intent": "payment",
+    "patterns": [
+      "metode pembayaran",
+      "bisa transfer bank",
+      "pembayaran qris",
+      "cara bayar",
+      "apakah bisa cicilan",
+      "pembayaran apa saja",
+      "cara pembayaran"
+    ]
+  },
+  {
+    "answer": "Kamu dapat menghubungi tim YM Music Store melalui email admin@ymmusicstore.co.id atau formulir kontak pada website.",
+    "intent": "contact",
+    "patterns": [
+      "kontak toko",
+      "hubungi admin",
+      "nomor whatsapp",
+      "alamat toko",
+      "layanan pelanggan",
+      "cara menghubungi toko",
+      "customer service"
+    ]
+  },
+  {
+    "answer": "Sama-sama, Sobat Musik! Senang bisa membantu. Semoga kamu segera menemukan instrumen yang paling cocok. Selamat bermusik! 🎸",
+    "intent": "thanks",
+    "patterns": [
+      "terima kasih",
+      "makasih",
+      "terima kasih banyak",
+      "sangat membantu",
+      "thanks"
+    ]
+  },
+  {
+    "answer": "Aku bisa membantu memberikan rekomendasi alat musik, menjelaskan informasi produk, membantu mencari kisaran harga, serta menjawab pertanyaan umum tentang pengiriman dan pembayaran. Coba ceritakan apa yang sedang kamu cari.",
+    "intent": "greeting_help",
+    "patterns": [
+      "bisa bantu apa",
+      "apa yang bisa kamu lakukan",
+      "fitur chatbot",
+      "kamu bisa apa",
+      "minta bantuan"
+    ]
+  },
+  {
+    "answer": "Tentu ada! 🎉 Khusus Mahasiswa Unpam S2, YM Music Store memberikan diskon 50% untuk pembelian gitar elektrik. Promo berlaku sampai 30 November 2026. Yuk, manfaatkan penawaran spesial ini sebelum berakhir!",
+    "intent": "promo",
+    "patterns": [
+      "ada promo apa",
+      "apakah ada promo",
+      "sedang ada diskon",
+      "ada diskon gitar",
+      "promo bulan ini",
+      "ada voucher belanja",
+      "potongan harga",
+      "penawaran spesial"
+    ]
+  },
+  {
+    "answer": "YM Music Store berlokasi di sebelah Kampus UNPAM Viktor, kawasan Jl. Raya Puspitek, Buaran, Pamulang, Tangerang Selatan, Banten. Kamu bisa menggunakan Kampus UNPAM Viktor sebagai patokan untuk menemukan toko kami. Kami tunggu kedatanganmu! 🎸",
+    "intent": "lokasi_toko",
+    "patterns": [
+      "lokasi toko dimana",
+      "alamat toko dimana",
+      "toko ym music dimana",
+      "dimana lokasi ym music store",
+      "dekat unpam viktor",
+      "toko dekat unpam",
+      "sebelah unpam viktor",
+      "bisa datang langsung ke toko",
+      "alamat lengkap toko",
+      "patokan lokasi toko"
+    ]
+  },
+  {
+    "answer": "YM Music Store buka setiap hari, Senin sampai Minggu, mulai pukul 08.00 hingga 22.00 WIB. Jadi kamu bisa berkunjung kapan saja selama jam operasional kami. 🎸",
+    "intent": "jam_operasional",
+    "patterns": [
+      "jam buka toko",
+      "toko buka jam berapa",
+      "toko tutup jam berapa",
+      "apakah toko buka hari minggu",
+      "apakah toko buka hari ini",
+      "jam operasional ym music",
+      "setiap hari buka",
+      "toko buka sampai malam"
+    ]
+  },
+  {
+    "answer": "Tentu! YM Music Store melayani pengiriman ke seluruh Indonesia. Kami menyediakan beberapa pilihan ekspedisi seperti Shopee Express, JNE, J&T Express, SiCepat, dan layanan ekspedisi lainnya. Untuk instrumen berukuran besar seperti drum dan amplifier, kami akan menyesuaikan pilihan pengiriman dengan ukuran dan keamanan barang. Biaya pengiriman dihitung berdasarkan alamat tujuan dan berat atau dimensi paket.",
+    "intent": "pengiriman",
+    "patterns": [
+      "bisa kirim barang",
+      "pengiriman pakai apa",
+      "ekspedisi apa saja",
+      "bisa kirim ke luar kota",
+      "apakah melayani pengiriman",
+      "ongkir pengiriman",
+      "bisa pakai jne",
+      "bisa pakai shopee express",
+      "pengiriman ke seluruh indonesia"
+    ]
+  },
+  {
+    "answer": "Kami menyediakan beberapa pilihan gitar:\n\n1. Yamaha Pacifica 112V\nHarga: Rp3.500.000\nJenis: Electric Guitar\nBody: Alder\nNeck: Maple\nFingerboard: Rosewood\nPickup: HSS (Humbucker-Single-Single)\nFitur: 5-way pickup selector dan coil split. Cocok untuk rock, blues, pop, dan berbagai genre musik.\n\n2. Ibanez GRX40\nHarga: Rp2.400.000\nJenis: Electric Guitar\nBody: Poplar\nNeck: Maple\nFingerboard: Jatoba\nPickup: HSS\nFitur: Tremolo bridge dan konfigurasi pickup fleksibel. Cocok untuk pemula hingga intermediate.\n\n3. Fender CD-60S\nHarga: Rp3.200.000\nJenis: Acoustic Guitar\nBody: Dreadnought\nTop: Solid Spruce\nBack & Sides: Mahogany\nNeck: Mahogany\nFitur: Suara akustik penuh dan nyaman untuk fingerstyle maupun strumming.\n\n4. Cort AD810\nHarga: Rp1.650.000\nJenis: Acoustic Guitar\nBody: Dreadnought\nTop: Spruce\nBack & Sides: Mahogany\nNeck: Mahogany\nFitur: Pilihan ekonomis untuk belajar gitar dan bermain akustik.\n\nSilakan tanyakan nama gitar tertentu jika ingin mengetahui detail lebih lanjut!",
+    "intent": "katalog_gitar",
+    "patterns": [
+      "gitar apa saja yang tersedia",
+      "jual gitar apa",
+      "ada gitar elektrik",
+      "ada gitar akustik",
+      "gitar yang dijual",
+      "rekomendasi gitar",
+      "gitar apa yang tersedia di toko",
+      "minta daftar gitar",
+      "detail gitar yang tersedia"
+    ]
+  },
+  {
+    "answer": "Berikut pilihan bass yang tersedia di YM Music Store:\n\n1. Yamaha TRBX174\nHarga: Rp2.900.000\nJenis: Electric Bass 4 String\nBody: Alder\nNeck: Maple\nFingerboard: Rosewood\nPickup: Split Single Coil + Single Coil\nFitur: Suara fleksibel untuk berbagai genre, mulai dari pop hingga rock.\n\n2. Ibanez GSR200\nHarga: Rp3.100.000\nJenis: Electric Bass 4 String\nBody: Okoume\nNeck: Maple\nFingerboard: Purpleheart\nPickup: Dynamix P + J\nFitur: Phat II EQ untuk menambah karakter low-end.\n\n3. Squier Affinity Precision Bass PJ\nHarga: Rp4.500.000\nJenis: Electric Bass 4 String\nBody: Poplar\nNeck: Maple\nFingerboard: Maple\nPickup: Split Single Coil + Single Coil\nFitur: Kombinasi pickup P/J dengan karakter suara yang fleksibel.\n\nSilakan tanyakan nama bass tertentu untuk informasi lebih lanjut!",
+    "intent": "katalog_bass",
+    "patterns": [
+      "bass apa saja yang tersedia",
+      "jual bass apa",
+      "ada bass elektrik",
+      "minta daftar bass",
+      "rekomendasi bass",
+      "bass yang tersedia di toko",
+      "detail bass",
+      "berapa harga bass"
+    ]
+  },
+  {
+    "answer": "Kami menyediakan beberapa pilihan drum:\n\n1. Yamaha Rydeen RDP2F5\nHarga: Rp8.500.000\nJenis: Acoustic Drum Kit\nKonfigurasi: 5-piece drum set\nBass Drum: 22 inch\nSnare: 14 inch\nTom: 10 dan 12 inch\nFloor Tom: 16 inch\nFitur: Cocok untuk latihan dan kebutuhan pertunjukan.\n\n2. Pearl Roadshow RS525SC\nHarga: Rp9.200.000\nJenis: Acoustic Drum Kit\nKonfigurasi: 5-piece drum set\nBass Drum: 22 inch\nSnare: 14 inch\nTom: 10 dan 12 inch\nFloor Tom: 16 inch\nFitur: Paket drum pemula dengan hardware pendukung.\n\n3. Alesis Nitro Max Kit\nHarga: Rp8.900.000\nJenis: Electronic Drum Kit\nPad: Mesh Head\nKonfigurasi: 8-piece electronic drum kit\nModul: Nitro Max Drum Module\nFitur: Mesh head yang responsif, konektivitas USB dan Bluetooth, serta beragam sound drum.\n\nSilakan tanyakan nama drum tertentu untuk mengetahui detailnya!",
+    "intent": "katalog_drum",
+    "patterns": [
+      "drum apa saja yang tersedia",
+      "jual drum apa",
+      "ada drum elektrik",
+      "ada drum akustik",
+      "minta daftar drum",
+      "rekomendasi drum",
+      "detail drum",
+      "berapa harga drum"
+    ]
+  },
+  {
+    "answer": "Selain gitar, bass, dan drum, YM Music Store juga menyediakan berbagai perlengkapan musik:\n\nAMPLIFIER\n\n1. Boss Katana-50 MkII\nHarga: Rp4.800.000\nJenis: Guitar Amplifier\nPower: 50 Watt\nSpeaker: 12 inch\nFitur: Berbagai karakter amplifier, efek built-in, dan pilihan konektivitas untuk latihan maupun perform.\n\n2. Fender Frontman 10G\nHarga: Rp1.400.000\nJenis: Guitar Amplifier\nPower: 10 Watt\nSpeaker: 6 inch\nFitur: Kontrol gain, volume, treble, bass, dan overdrive. Cocok untuk latihan di rumah.\n\n3. Ampeg BA-108\nHarga: Rp2.500.000\nJenis: Bass Amplifier\nPower: 20 Watt\nSpeaker: 8 inch\nFitur: Dirancang khusus untuk bass dengan kontrol tone dan karakter suara low-end.\n\nKEYBOARD DAN PIANO DIGITAL\n\n4. Yamaha PSR-E373\nHarga: Rp3.200.000\nJenis: Portable Keyboard\nKeys: 61 keys\nFitur: Beragam voice dan style, efek suara, serta fitur pembelajaran.\n\n5. Casio CDP-S110\nHarga: Rp5.500.000\nJenis: Digital Piano\nKeys: 88 keys\nFitur: Scaled Hammer Action Keyboard dan desain ringkas.\n\nAKSESORIS\n\n6. Boss DS-1 Distortion\nHarga: Rp950.000\nJenis: Guitar Effect Pedal\nFitur: Pedal distorsi untuk menghasilkan karakter suara rock hingga hard rock.\n\n7. D'Addario EXL110\nHarga: Rp120.000\nJenis: Electric Guitar Strings\nGauge: 10-46\nFitur: Senar gitar elektrik untuk penggunaan berbagai genre musik.\n\n8. Dunlop Tortex Standard Pick\nHarga: Rp15.000\nJenis: Guitar Pick\nFitur: Pick gitar dengan berbagai pilihan ketebalan.\n\nKami juga menyediakan kabel instrumen, strap gitar, tuner, stand, dan perlengkapan musik lainnya. Silakan tanyakan produk tertentu untuk informasi lebih lanjut!",
+    "intent": "katalog_instrumen_lain",
+    "patterns": [
+      "jual amplifier apa",
+      "ada ampli gitar",
+      "ada ampli bass",
+      "keyboard apa saja",
+      "jual keyboard",
+      "ada piano digital",
+      "aksesoris musik apa saja",
+      "ada efek gitar",
+      "produk selain gitar apa saja",
+      "alat musik lainnya",
+      "minta daftar produk lainnya"
+    ]
+  }
+]

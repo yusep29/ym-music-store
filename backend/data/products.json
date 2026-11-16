@@ -1,0 +1,243 @@
+[
+  {
+    "aliases": [
+      "pacifica",
+      "yamaha pacifica",
+      "pacifica 112j",
+      "yamaha 112j"
+    ],
+    "category": "Guitars",
+    "description": "Gitar elektrik versatile dengan playability nyaman untuk pemula hingga intermediate.",
+    "emoji": "🎸",
+    "id": 1,
+    "ideal_for": "Pemain pemula hingga intermediate yang membutuhkan gitar serbaguna untuk pop, blues, dan rock.",
+    "name": "Yamaha Pacifica 112J",
+    "price": 2899000,
+    "specifications": {
+      "Body": "Alder",
+      "Bridge": "Vintage-style tremolo",
+      "Fingerboard": "Rosewood",
+      "Jenis": "Gitar elektrik solid body",
+      "Jumlah senar": "6",
+      "Kontrol": "Master volume, tone, dan 5-way pickup selector",
+      "Neck": "Maple",
+      "Pickup": "HSS (humbucker dan dua single-coil)"
+    },
+    "stock": 8,
+    "tag": "Best for beginners"
+  },
+  {
+    "aliases": [
+      "squier",
+      "affinity strat",
+      "stratocaster",
+      "squier strat",
+      "affinity stratocaster"
+    ],
+    "category": "Guitars",
+    "description": "Karakter suara strat klasik untuk pop, blues, rock, dan banyak genre lain.",
+    "emoji": "🎸",
+    "id": 2,
+    "ideal_for": "Pemain yang menyukai karakter gitar Strat-style untuk pop, blues, funk, dan rock.",
+    "name": "Squier Affinity Stratocaster",
+    "price": 3950000,
+    "specifications": {
+      "Body": "Poplar (dapat berbeda menurut tahun/varian)",
+      "Bridge": "Tremolo bridge",
+      "Fingerboard": "Indian Laurel atau Maple, tergantung varian",
+      "Jenis": "Gitar elektrik solid body",
+      "Jumlah senar": "6",
+      "Kontrol": "Master volume, 2 tone, dan 5-way selector",
+      "Neck": "Maple",
+      "Pickup": "3 single-coil"
+    },
+    "stock": 5,
+    "tag": "Classic tone"
+  },
+  {
+    "aliases": [
+      "cort",
+      "ad810",
+      "cort ad 810",
+      "cort acoustic"
+    ],
+    "category": "Guitars",
+    "description": "Gitar akustik dreadnought dengan suara hangat untuk latihan dan tampil.",
+    "emoji": "🎸",
+    "id": 3,
+    "ideal_for": "Latihan akustik, strumming, dan pemain yang mencari gitar dreadnought ekonomis.",
+    "name": "Cort AD810",
+    "price": 1799000,
+    "specifications": {
+      "Back & sides": "Mahogany (material dapat berbeda menurut seri/produksi)",
+      "Body": "Dreadnought",
+      "Elektronik": "Tidak dilengkapi pickup pada versi standar",
+      "Fingerboard": "Merbau",
+      "Jenis": "Gitar akustik steel-string",
+      "Jumlah senar": "6",
+      "Neck": "Mahogany",
+      "Top": "Spruce"
+    },
+    "stock": 12,
+    "tag": "Acoustic favorite"
+  },
+  {
+    "aliases": [
+      "ibanez",
+      "gsr180",
+      "ibanez gsr",
+      "ibanez soundgear"
+    ],
+    "category": "Bass",
+    "description": "Bass elektrik 4 senar yang nyaman untuk mulai belajar groove.",
+    "emoji": "🎸",
+    "id": 4,
+    "ideal_for": "Pemula yang ingin belajar bass dengan konfigurasi sederhana untuk pop, rock, dan band sekolah/kampus.",
+    "name": "Ibanez GSR180",
+    "price": 2799000,
+    "specifications": {
+      "Body": "Poplar (dapat berbeda menurut varian)",
+      "Bridge": "Ibanez B10 bridge",
+      "Fingerboard": "Jatoba atau material setara, tergantung varian",
+      "Jenis": "Gitar bass elektrik",
+      "Jumlah senar": "4",
+      "Kontrol": "Volume dan tone",
+      "Neck": "Maple",
+      "Pickup": "Dynamix P-style"
+    },
+    "stock": 4,
+    "tag": "Smooth bassline"
+  },
+  {
+    "aliases": [
+      "alesis",
+      "nitro mesh",
+      "nitro mesh kit",
+      "alesis nitro",
+      "drum alesis"
+    ],
+    "category": "Drums",
+    "description": "Drum elektrik mesh untuk latihan di rumah dengan respons natural.",
+    "emoji": "🥁",
+    "id": 5,
+    "ideal_for": "Latihan di rumah atau ruang latihan dengan kebutuhan volume yang lebih mudah dikendalikan menggunakan headphone.",
+    "name": "Alesis Nitro Mesh Kit",
+    "price": 6999000,
+    "specifications": {
+      "Fitur": "Pilihan suara drum dan metronome untuk latihan",
+      "Jenis": "Drum elektrik",
+      "Komponen": "Kick pad/tower, snare, tom, hi-hat, crash, ride, dan pedal",
+      "Koneksi": "Headphone dan USB/MIDI (fitur tergantung versi modul)",
+      "Modul": "Nitro Drum Module",
+      "Pad": "Mesh head pada snare dan tom (konfigurasi dapat berbeda menurut paket)"
+    },
+    "stock": 3,
+    "tag": "Electronic drums"
+  },
+  {
+    "aliases": [
+      "roland",
+      "go keys",
+      "gokeys",
+      "go:keys 3",
+      "roland gokeys"
+    ],
+    "category": "Keyboards",
+    "description": "Keyboard portable untuk eksplorasi sound dan membuat ide musik.",
+    "emoji": "🎹",
+    "id": 6,
+    "ideal_for": "Pemula hingga kreator musik yang membutuhkan keyboard portable untuk latihan dan eksplorasi sound.",
+    "name": "Roland GO:KEYS 3",
+    "price": 5799000,
+    "specifications": {
+      "Fitur": "Sound dan rhythm untuk eksplorasi musik serta pembuatan ide lagu",
+      "Jenis": "Keyboard portable",
+      "Jumlah tuts": "61",
+      "Koneksi": "Konektivitas audio dan USB; detail bergantung konfigurasi perangkat",
+      "Sound engine": "ZEN-Core",
+      "Speaker": "Speaker stereo internal"
+    },
+    "stock": 6,
+    "tag": "Creative keyboard"
+  },
+  {
+    "aliases": [
+      "casio",
+      "ct s300",
+      "cts300",
+      "casio cts300"
+    ],
+    "category": "Keyboards",
+    "description": "Keyboard ringan dengan fitur latihan yang cocok untuk pemula.",
+    "emoji": "🎹",
+    "id": 7,
+    "ideal_for": "Pemula yang membutuhkan keyboard ringan untuk belajar dan bermain di rumah.",
+    "name": "Casio CT-S300",
+    "price": 2499000,
+    "specifications": {
+      "Daya": "Adaptor atau baterai yang kompatibel",
+      "Fitur": "Dance Music Mode, pitch bend wheel, dan fungsi pembelajaran",
+      "Jenis": "Keyboard portable",
+      "Jumlah tuts": "61",
+      "Rhythm": "77 rhythm bawaan (mengacu pada spesifikasi seri)",
+      "Speaker": "Speaker stereo internal",
+      "Tone": "400 tone bawaan (mengacu pada spesifikasi seri)"
+    },
+    "stock": 9,
+    "tag": "Beginner friendly"
+  },
+  {
+    "aliases": [
+      "blackstar",
+      "id core",
+      "idcore",
+      "id core 10",
+      "blackstar id core 10 v4",
+      "ampli blackstar"
+    ],
+    "category": "Amps",
+    "description": "Amplifier gitar compact dengan beberapa pilihan voice dan efek.",
+    "emoji": "🔊",
+    "id": 8,
+    "ideal_for": "Latihan gitar di rumah dengan pilihan karakter suara dan efek dalam satu unit compact.",
+    "name": "Blackstar ID:Core 10 V4",
+    "price": 1899000,
+    "specifications": {
+      "Daya": "10 watt stereo",
+      "Efek": "Efek modulasi, delay, dan reverb (tergantung preset/versi)",
+      "Fitur": "Super Wide Stereo dan konektivitas USB pada versi yang mendukung",
+      "Jenis": "Amplifier gitar",
+      "Speaker": "2 x 3 inch",
+      "Voice": "Pilihan voice clean dan overdrive"
+    },
+    "stock": 7,
+    "tag": "Guitar amplifier"
+  },
+  {
+    "aliases": [
+      "boss",
+      "ds1",
+      "ds-1",
+      "boss ds1",
+      "boss distortion",
+      "pedal distortion"
+    ],
+    "category": "Accessories",
+    "description": "Pedal distortion ikonik untuk mendapatkan karakter rock yang agresif.",
+    "emoji": "🎛️",
+    "id": 9,
+    "ideal_for": "Gitaris yang membutuhkan efek distortion untuk rock dan berbagai gaya musik berkarakter gain.",
+    "name": "Boss DS-1 Distortion",
+    "price": 899000,
+    "specifications": {
+      "Bypass": "Buffered bypass",
+      "Daya": "Baterai 9V atau adaptor 9V yang kompatibel",
+      "Jenis": "Pedal efek gitar distortion",
+      "Karakter suara": "Distorsi dari crunch hingga lead yang lebih agresif",
+      "Koneksi": "Input dan output jack 1/4 inch",
+      "Kontrol": "Level, Tone, dan Distortion"
+    },
+    "stock": 10,
+    "tag": "Rock essential"
+  }
+]

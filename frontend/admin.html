@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YM Music Store — Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.admin-page{width:min(1100px,calc(100% - 40px));margin:45px auto}.admin-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:25px}.admin-top h1{font:600 34px 'Space Grotesk';margin:8px 0}.admin-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:25px}.stat-card,.admin-box{background:#1b1a18;border:1px solid #34312d;border-radius:10px;padding:20px}.stat-card small{color:#888;font-size:11px}.stat-card b{display:block;font:600 30px 'Space Grotesk';margin-top:8px;color:#ff8750}.admin-tabs{display:flex;gap:8px;border-bottom:1px solid #34312d;margin-bottom:18px}.admin-tab{background:transparent;border:1px solid #34312d;border-bottom:0;color:#aaa;padding:11px 17px;border-radius:8px 8px 0 0;font-size:12px}.admin-tab.active{background:#ff6b2c;color:#1b120e;border-color:#ff6b2c;font-weight:700}.tab-panel{display:none}.tab-panel.active{display:block}.admin-box h2{font:600 19px 'Space Grotesk';margin:0 0 8px}.admin-box p{color:#999;font-size:11px;line-height:1.6}.admin-box textarea{width:100%;min-height:360px;background:#111;color:#ddd;border:1px solid #403a34;border-radius:8px;padding:14px;font:12px/1.6 monospace;outline:none}.admin-actions{display:flex;justify-content:space-between;align-items:center;margin-top:12px;gap:15px}.status{font-size:11px;color:#9c958d}@media(max-width:760px){.admin-cards{grid-template-columns:1fr}.admin-top{align-items:start;gap:15px;flex-direction:column}}@media(max-width:520px){.admin-page{width:calc(100% - 24px);margin:25px auto}.admin-tab{padding:10px 12px;font-size:10px}.admin-box{padding:14px}}
+</style>
+</head>
+<body>
+<div class="announcement">YM MUSIC STORE · RUANG KERJA ADMIN</div>
+<header class="navbar"><a class="brand" href="index.html"><span class="brand-mark">♫</span><span>YM <b>MUSIC STORE</b><small>RUANG KERJA ADMIN</small></span></a><a class="btn btn-small" href="index.html">← Kembali ke toko</a></header>
+<main class="admin-page">
+  <div class="admin-top"><div><div class="eyebrow">PENGELOLAAN TOKO</div><h1>Dasbor admin.</h1><p style="color:#999;font-size:12px">Kelola basis pengetahuan chatbot dan katalog produk.</p></div></div>
+  <div class="admin-cards">
+    <div class="stat-card"><small>PRODUK DI KATALOG</small><b id="statProducts">—</b></div>
+    <div class="stat-card"><small>ENTRI BASIS PENGETAHUAN</small><b id="statKnowledge">—</b></div>
+    <div class="stat-card"><small>KATEGORI PRODUK</small><b id="statCategories">—</b></div>
+  </div>
+  <div class="admin-tabs">
+    <button class="admin-tab active" data-tab="knowledgePanel">Knowledge Base</button>
+    <button class="admin-tab" data-tab="productsPanel">Manajemen Produk</button>
+  </div>
+
+  <section class="tab-panel active" id="knowledgePanel">
+    <div class="admin-box"><h2>Basis pengetahuan chatbot</h2><p>Ubah pola pertanyaan dan jawaban dalam format JSON. Perubahan akan dimuat ulang oleh mesin chatbot setelah disimpan.</p>
+      <textarea id="knowledgeEditor" spellcheck="false">Memuat knowledge base...</textarea>
+      <div class="admin-actions"><span class="status" id="knowledgeStatus">Memuat data...</span><button class="btn" id="saveKnowledge">Simpan knowledge base ↗</button></div>
+    </div>
+  </section>
+
+  <section class="tab-panel" id="productsPanel">
+    <div class="admin-box">
+      <h2>Data produk (JSON)</h2>
+      <p>Edit seluruh katalog produk langsung dalam format JSON, sama seperti Knowledge Base. Pastikan format JSON valid sebelum menyimpan.</p>
+      <textarea id="productEditor" spellcheck="false">Memuat data produk...</textarea>
+      <div class="admin-actions">
+        <span class="status" id="productStatus">Memuat data...</span>
+        <button class="btn" id="saveProducts">Simpan data produk ↗</button>
+      </div>
+    </div>
+  </section>
+</main>
+<script>
+const API="http://127.0.0.1:5000/api";
+const $=id=>document.getElementById(id);
+
+document.querySelectorAll('.admin-tab').forEach(tab=>tab.addEventListener('click',()=>{
+  document.querySelectorAll('.admin-tab').forEach(t=>t.classList.toggle('active',t===tab));
+  document.querySelectorAll('.tab-panel').forEach(p=>p.classList.toggle('active',p.id===tab.dataset.tab));
+}));
+
+async function request(url,options={}){
+  const response=await fetch(API+url,options);
+  const data=await response.json();
+  if(!response.ok)throw new Error(data.error||'Permintaan gagal');
+  return data;
+}
+
+async function loadStats(){
+  const stats=await request('/admin/stats');
+  $('statProducts').textContent=stats.products;
+  $('statKnowledge').textContent=stats.knowledge;
+  $('statCategories').textContent=stats.categories;
+}
+
+async function loadKnowledge(){
+  try{
+    $('knowledgeEditor').value=JSON.stringify(await request('/admin/knowledge'),null,2);
+    $('knowledgeStatus').textContent='Knowledge base berhasil dimuat.';
+  }catch(e){
+    $('knowledgeStatus').textContent='Gagal memuat: '+e.message;
+  }
+}
+
+$('saveKnowledge').onclick=async()=>{
+  const status=$('knowledgeStatus');
+  try{
+    const data=JSON.parse($('knowledgeEditor').value);
+    if(!Array.isArray(data))throw new Error('Data harus berupa array JSON');
+    const result=await request('/admin/knowledge',{
+      method:'PUT',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(data)
+    });
+    status.textContent=`✓ ${result.message} (${result.count} intent)`;
+    await loadStats();
+  }catch(e){
+    status.textContent='Error: '+e.message;
+  }
+};
+
+async function loadProducts(){
+  try{
+    $('productEditor').value=JSON.stringify(await request('/admin/products'),null,2);
+    $('productStatus').textContent='Data produk berhasil dimuat.';
+  }catch(e){
+    $('productStatus').textContent='Gagal memuat: '+e.message;
+  }
+}
+
+$('saveProducts').onclick=async()=>{
+  const status=$('productStatus');
+  try{
+    const data=JSON.parse($('productEditor').value);
+    if(!Array.isArray(data))throw new Error('Data produk harus berupa array JSON');
+    const result=await request('/admin/products',{
+      method:'PUT',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(data)
+    });
+    status.textContent=`✓ ${result.message} (${result.count} produk)`;
+    await loadStats();
+  }catch(e){
+    status.textContent='Error: '+e.message;
+  }
+};
+
+async function init(){
+  try{await loadStats();}
+  catch(e){$('knowledgeStatus').textContent='Backend belum aktif. Jalankan Flask terlebih dahulu.';}
+  await Promise.all([loadKnowledge(),loadProducts()]);
+}
+init();
+</script>
+</body></html>
