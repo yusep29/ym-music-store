@@ -214,7 +214,7 @@ async function sendMessage(text){
     const data=await res.json();
 
     // Jaga agar animasi terlihat minimal 650 ms, termasuk saat API sangat cepat.
-    const remainingTime=1550-(Date.now()-typingStartedAt);
+    const remainingTime=2000-(Date.now()-typingStartedAt);
     if(remainingTime>0)await new Promise(resolve=>setTimeout(resolve,remainingTime));
 
     typing.remove();
