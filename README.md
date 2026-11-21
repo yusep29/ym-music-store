@@ -14,7 +14,7 @@ Aplikasi demo toko alat musik daring dengan chatbot berbasis pencarian (retrieva
 
 ## Persyaratan
 - Python 3.10 atau lebih baru
-- Peramban web modern
+- Browser web modern
 
 ## Menjalankan backend
 
